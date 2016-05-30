@@ -1,0 +1,27 @@
+h1 Listing line_items
+
+table
+  thead
+    tr
+      th Product
+      th Order
+      th Quantity
+      th Total price
+      th
+      th
+      th
+
+  tbody
+    - @line_items.each do |line_item|
+      tr
+        td = line_item.product_id
+        td = line_item.order_id
+        td = line_item.quantity
+        td = line_item.total_price
+        td = link_to 'Show', line_item
+        td = link_to 'Edit', edit_line_item_path(line_item)
+        td = link_to 'Destroy', line_item, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Line item', new_line_item_path

@@ -1,0 +1,1609 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled is-u2f-enabled">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-504cc780bb53241b72465acf5ed2f04a7f976c026278c14d2bf2abcbe478bc67.css" integrity="sha256-UEzHgLtTJBtyRlrPXtLwSn+XbAJieMFNK/Kry+R4vGc=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-190410b848a9b2c115cd20b6c34db870f1ec1e88e4a51863b1e6dec731fa7371.css" integrity="sha256-GQQQuEipssEVzSC2w024cPHsHojkpRhjsebexzH6c3E=" media="all" rel="stylesheet" />
+    
+    
+    
+    
+
+    <link as="script" href="https://assets-cdn.github.com/assets/frameworks-21fb64a12f51065265f4841fa5d109725d1b8e7a081b3346c393a5c6c40e4f84.js" rel="preload" />
+    
+    <link as="script" href="https://assets-cdn.github.com/assets/github-b068027e61a8ae740e7361c036a0a7df24fadf171fd1a92b2fe44c31c94dd62a.js" rel="preload" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>rails-style-guide/README-zhCN.md at master · JuanitoFatas/rails-style-guide</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars0.githubusercontent.com/u/1000669?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="JuanitoFatas/rails-style-guide" name="twitter:title" /><meta content="rails-style-guide - :orange_book: Rails Style Guide in Chinese" name="twitter:description" />
+      <meta content="https://avatars0.githubusercontent.com/u/1000669?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="JuanitoFatas/rails-style-guide" property="og:title" /><meta content="https://github.com/JuanitoFatas/rails-style-guide" property="og:url" /><meta content="rails-style-guide - :orange_book: Rails Style Guide in Chinese" property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/MTgwODQ3NDU6MTIxYjA2ZjRlOTc1YTE0ODMzOTQ2NDcwNzkxMzhiMjM6Y2JhZjU2YzJhMDhmZDdhNzJjN2RiNmQzNzIxZjVjMjgzM2Q5ZjVkNWJkZjEyYTM1M2QxN2UyODI1ODZiNDExZA==--47917dd4fdf470eccbdeb858240bcdfd75fae117">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="3BAC9BD1:5EFE:24FA63C4:57222DCB" name="octolytics-dimension-request_id" /><meta content="18084745" name="octolytics-actor-id" /><meta content="EEternal" name="octolytics-actor-login" /><meta content="f00f2ec0fcb6763e42d7849ab568bc8d3c736284505fd6793b4a249a8e83208c" name="octolytics-actor-hash" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="EEternal">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="ZTcyN2IxNDA4OGY1MTRmNTVlODA1ODVmMmY3YTZjNmM0YWQ2MjBhNDBmMGZhOWVhYWY1NDAyNDgxNmZiNmVjOXx7InJlbW90ZV9hZGRyZXNzIjoiNTkuMTcyLjE1NS4yMDkiLCJyZXF1ZXN0X2lkIjoiM0JBQzlCRDE6NUVGRToyNEZBNjNDNDo1NzIyMkRDQiIsInRpbWVzdGFtcCI6MTQ2MTg1NzczOX0=">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="81b5e135719cf47ef27407ff8db895f500670600" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="00bdca19ebb6a721779794c91cad0e40">
+    
+
+      
+  <meta name="description" content="rails-style-guide - :orange_book: Rails Style Guide in Chinese">
+  <meta name="go-import" content="github.com/JuanitoFatas/rails-style-guide git https://github.com/JuanitoFatas/rails-style-guide.git">
+
+  <meta content="1000669" name="octolytics-dimension-user_id" /><meta content="JuanitoFatas" name="octolytics-dimension-user_login" /><meta content="3830142" name="octolytics-dimension-repository_id" /><meta content="JuanitoFatas/rails-style-guide" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="true" name="octolytics-dimension-repository_is_fork" /><meta content="2454047" name="octolytics-dimension-repository_parent_id" /><meta content="bbatsov/rails-style-guide" name="octolytics-dimension-repository_parent_nwo" /><meta content="2454047" name="octolytics-dimension-repository_network_root_id" /><meta content="bbatsov/rails-style-guide" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/JuanitoFatas/rails-style-guide/commits/master.atom" rel="alternate" title="Recent Commits to rails-style-guide:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-in   env-production windows vis-public fork page-blob">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+        <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+
+
+        <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/JuanitoFatas/rails-style-guide/search" class="js-site-search-form" data-scoped-search-url="/JuanitoFatas/rails-style-guide/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        tabindex="1"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item">
+          <a href="/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="/issues" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item">
+    
+
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="/new"
+       aria-label="Create new…"
+       data-ga-click="Header, create new, icon:add">
+      <svg aria-hidden="true" class="octicon octicon-plus left" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target" href="/EEternal"
+       aria-label="View profile and more"
+       data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@EEternal" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/18084745?v=3&amp;s=40" width="20" />
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu  dropdown-menu-sw">
+        <div class=" dropdown-header header-nav-current-user css-truncate">
+            Signed in as <strong class="css-truncate-target">EEternal</strong>
+
+        </div>
+
+
+        <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="/EEternal" data-ga-click="Header, go to profile, text:your profile">
+            Your profile
+          </a>
+        <a class="dropdown-item" href="/stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+          <a class="dropdown-item" href="/explore" data-ga-click="Header, go to explore, text:explore">
+            Explore
+          </a>
+          <a class="dropdown-item" href="/integrations" data-ga-click="Header, go to integrations, text:integrations">
+            Integrations
+          </a>
+        <a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+            Settings
+          </a>
+
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/logout" class="logout-form" data-form-nonce="81b5e135719cf47ef27407ff8db895f500670600" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="0IvOfoZR4WIHCQZXqm+GlfyIAWhel40dseX2Gyap9YSagMHaP/DOl7C7absEvkDBElMYKXKOHBQ9gf64h4f6Mw==" /></div>
+            <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+              Sign out
+            </button>
+</form>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+    
+  </div>
+</div>
+
+
+      
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="81b5e135719cf47ef27407ff8db895f500670600" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4PtC2/q5e4tt/JfV0S16JmGIC+aKCe2Fy2Z1ExLBPcoNBSD7vTO3YiAQk36QN9v4TKIzX3b6Y/o8iolbmRJpkQ==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="3830142" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/JuanitoFatas/rails-style-guide/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true"
+            data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+              <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+              Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="/JuanitoFatas/rails-style-guide/watchers">
+            28
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+                      Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8 2.81v10.38c0 0.67-0.81 1-1.28 0.53L3 10H1c-0.55 0-1-0.45-1-1V7c0-0.55 0.45-1 1-1h2l3.72-3.72c0.47-0.47 1.28-0.14 1.28 0.53z m7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06 1.97 1.97-1.97 1.97 1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06-1.97-1.97 1.97-1.97z"></path></svg>
+                      Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/JuanitoFatas/rails-style-guide/unstar" class="js-toggler-form starred" data-form-nonce="81b5e135719cf47ef27407ff8db895f500670600" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="KFYCZxTjPehznh1ym3B6AAok33+tpeXfDs/HAysUljSK0CZ9elX9wYfLPo53sEK4146NfrglZd+Ck+Sa8K7+QA==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar JuanitoFatas/rails-style-guide"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/JuanitoFatas/rails-style-guide/stargazers">
+          218
+        </a>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/JuanitoFatas/rails-style-guide/star" class="js-toggler-form unstarred" data-form-nonce="81b5e135719cf47ef27407ff8db895f500670600" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/3zujVU0Nnur8m6xHJM05OiFzG2evvwC9h7KV9yK4E5yftpeJAgMSSuJcOmWnU0CkTmRX/sfWLODk3q57eBgnw==" /></div>
+      <button
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star JuanitoFatas/rails-style-guide"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/JuanitoFatas/rails-style-guide/stargazers">
+          218
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/JuanitoFatas/rails-style-guide/fork" class="btn-with-count" data-form-nonce="81b5e135719cf47ef27407ff8db895f500670600" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="E4NdLdfF28PG+fX4U/ej57JZUGs0EjnxEvAm/UwkdVC3L13V6wpYffqLmcrpuCpUtUpWC6zm9d+5eroETlw8Vg==" /></div>
+            <button
+                type="submit"
+                class="btn btn-sm btn-with-count"
+                data-ga-click="Repository, show fork modal, action:blob#show; text:Fork"
+                title="Fork your own copy of JuanitoFatas/rails-style-guide to your account"
+                aria-label="Fork your own copy of JuanitoFatas/rails-style-guide to your account">
+              <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+              Fork
+            </button>
+</form>
+    <a href="/JuanitoFatas/rails-style-guide/network" class="social-count">
+      794
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title public ">
+  <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+  <span class="author" itemprop="author"><a href="/JuanitoFatas" class="url fn" rel="author">JuanitoFatas</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/JuanitoFatas/rails-style-guide" data-pjax="#js-repo-pjax-container">rails-style-guide</a></strong>
+
+    <span class="fork-flag">
+      <span class="text">forked from <a href="/bbatsov/rails-style-guide">bbatsov/rails-style-guide</a></span>
+    </span>
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/JuanitoFatas/rails-style-guide" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /JuanitoFatas/rails-style-guide" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/JuanitoFatas/rails-style-guide/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /JuanitoFatas/rails-style-guide/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a href="/JuanitoFatas/rails-style-guide/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /JuanitoFatas/rails-style-guide/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      Wiki
+</a>
+
+  <a href="/JuanitoFatas/rails-style-guide/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /JuanitoFatas/rails-style-guide/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="/JuanitoFatas/rails-style-guide/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /JuanitoFatas/rails-style-guide/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/JuanitoFatas/rails-style-guide/blob/66693ca56f297ddbf9dfa8670e519d8eb40ede59/README-zhCN.md" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:fb1fcd43ebbf339b576274f8165ba7b1 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/JuanitoFatas/rails-style-guide/blob/remove-trailing-spaces/README-zhCN.md"
+               data-name="remove-trailing-spaces"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text" title="remove-trailing-spaces">
+                remove-trailing-spaces
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="btn-group right">
+    <a href="/JuanitoFatas/rails-style-guide/find/master"
+          class="js-pjax-capture-input btn btn-sm"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/JuanitoFatas/rails-style-guide"><span>rails-style-guide</span></a></span></span><span class="separator">/</span><strong class="final-path">README-zhCN.md</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="right">
+        <a class="commit-tease-sha" href="/JuanitoFatas/rails-style-guide/commit/66693ca56f297ddbf9dfa8670e519d8eb40ede59" data-pjax>
+          66693ca
+        </a>
+        <time datetime="2015-12-31T06:52:23Z" is="relative-time">Dec 31, 2015</time>
+      </span>
+      <div>
+        <img alt="@fighterleslie" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/8318937?v=3&amp;s=40" width="20" />
+        <a href="/fighterleslie" class="user-mention" rel="contributor">fighterleslie</a>
+          <a href="/JuanitoFatas/rails-style-guide/commit/66693ca56f297ddbf9dfa8670e519d8eb40ede59" class="message" data-pjax="true" title="Fix typo in README-zhCN.md">Fix typo in README-zhCN.md</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>6</strong>
+         contributors
+      </button>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="JuanitoFatas" href="/JuanitoFatas/rails-style-guide/commits/master/README-zhCN.md?author=JuanitoFatas"><img alt="@JuanitoFatas" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/1000669?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="fighterleslie" href="/JuanitoFatas/rails-style-guide/commits/master/README-zhCN.md?author=fighterleslie"><img alt="@fighterleslie" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/8318937?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="zlx" href="/JuanitoFatas/rails-style-guide/commits/master/README-zhCN.md?author=zlx"><img alt="@zlx" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/1835854?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="williamherry" href="/JuanitoFatas/rails-style-guide/commits/master/README-zhCN.md?author=williamherry"><img alt="@williamherry" class="avatar" height="20" src="https://avatars3.githubusercontent.com/u/1032483?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="diguage" href="/JuanitoFatas/rails-style-guide/commits/master/README-zhCN.md?author=diguage"><img alt="@diguage" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/2121467?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="zymiboxpay" href="/JuanitoFatas/rails-style-guide/commits/master/README-zhCN.md?author=zymiboxpay"><img alt="@zymiboxpay" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/9331269?v=3&amp;s=40" width="20" /> </a>
+
+
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@JuanitoFatas" height="24" src="https://avatars1.githubusercontent.com/u/1000669?v=3&amp;s=48" width="24" />
+            <a href="/JuanitoFatas">JuanitoFatas</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@fighterleslie" height="24" src="https://avatars1.githubusercontent.com/u/8318937?v=3&amp;s=48" width="24" />
+            <a href="/fighterleslie">fighterleslie</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@zlx" height="24" src="https://avatars1.githubusercontent.com/u/1835854?v=3&amp;s=48" width="24" />
+            <a href="/zlx">zlx</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@williamherry" height="24" src="https://avatars1.githubusercontent.com/u/1032483?v=3&amp;s=48" width="24" />
+            <a href="/williamherry">williamherry</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@diguage" height="24" src="https://avatars3.githubusercontent.com/u/2121467?v=3&amp;s=48" width="24" />
+            <a href="/diguage">diguage</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@zymiboxpay" height="24" src="https://avatars2.githubusercontent.com/u/9331269?v=3&amp;s=48" width="24" />
+            <a href="/zymiboxpay">zymiboxpay</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="btn-group">
+      <a href="/JuanitoFatas/rails-style-guide/raw/master/README-zhCN.md" class="btn btn-sm " id="raw-url">Raw</a>
+        <a href="/JuanitoFatas/rails-style-guide/blame/master/README-zhCN.md" class="btn btn-sm js-update-url-with-hash">Blame</a>
+      <a href="/JuanitoFatas/rails-style-guide/commits/master/README-zhCN.md" class="btn btn-sm " rel="nofollow">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://windows.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15 2H1c-0.55 0-1 0.45-1 1v9c0 0.55 0.45 1 1 1h5.34c-0.25 0.61-0.86 1.39-2.34 2h8c-1.48-0.61-2.09-1.39-2.34-2h5.34c0.55 0 1-0.45 1-1V3c0-0.55-0.45-1-1-1z m0 9H1V3h14v8z"></path></svg>
+        </a>
+
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/JuanitoFatas/rails-style-guide/edit/master/README-zhCN.md" class="inline-form js-update-url-with-hash" data-form-nonce="81b5e135719cf47ef27407ff8db895f500670600" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="OwqFdb9Vc16iHMN3zLYakUM6EPjBL/6s+UgsGhM35hNDMHWhyFyh2pY7g9cIYSbhIvHPriiS3gu4/3rvpE8UjA==" /></div>
+          <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M0 12v3h3l8-8-3-3L0 12z m3 2H1V12h1v1h1v1z m10.3-9.3l-1.3 1.3-3-3 1.3-1.3c0.39-0.39 1.02-0.39 1.41 0l1.59 1.59c0.39 0.39 0.39 1.02 0 1.41z"></path></svg>
+          </button>
+</form>        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/JuanitoFatas/rails-style-guide/delete/master/README-zhCN.md" class="inline-form" data-form-nonce="81b5e135719cf47ef27407ff8db895f500670600" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="OkVmG94cNKnG6f3w91twPFRM4S6yLrVaHAeQ13FW+7eu5l1ndZx8i7P9xn18vEIUTLdDB/xYlVU+Y1ZAjwZsPQ==" /></div>
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and delete the file" data-disable-with>
+            <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M10 2H8c0-0.55-0.45-1-1-1H4c-0.55 0-1 0.45-1 1H1c-0.55 0-1 0.45-1 1v1c0 0.55 0.45 1 1 1v9c0 0.55 0.45 1 1 1h7c0.55 0 1-0.45 1-1V5c0.55 0 1-0.45 1-1v-1c0-0.55-0.45-1-1-1z m-1 12H2V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9z m1-10H1v-1h9v1z"></path></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      1008 lines (759 sloc)
+      <span class="file-info-divider"></span>
+    31.8 KB
+  </div>
+</div>
+
+  
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-序幕" class="anchor" href="#序幕" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>序幕</h1>
+
+<blockquote>
+<p>榜样很重要。 <br>
+-- 《机械战警》 Alex J. Murphy 警官</p>
+</blockquote>
+
+<p>这份指南旨在提供一系列 Ruby on Rails 4 开发的最佳实践和风格惯例。本指南与社区驱动并制定的 <a href="https://github.com/bbatsov/ruby-style-guide">Ruby 编码风格指南</a>可以互为补充。</p>
+
+<p>本文中的一些建议只适用于 Rails 4.0+ 版本。</p>
+
+<p>你可以使用 <a href="https://github.com/TechnoGate/transmuter">Transmuter</a> 来生成本文的 PDF 或 HTML 版本。</p>
+
+<p>本指南同时有以下语言的翻译版：</p>
+
+<ul>
+<li><a href="https://github.com/JuanitoFatas/rails-style-guide/blob/master/README.md">英文原版</a></li>
+<li><a href="https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhTW.md">繁體中文</a></li>
+<li><a href="https://github.com/satour/rails-style-guide/blob/master/README-jaJA.md">日语</a></li>
+<li><a href="https://github.com/arbox/rails-style-guide/blob/master/README-ruRU.md">俄语</a></li>
+<li><a href="https://github.com/tolgaavci/rails-style-guide/blob/master/README-trTR.md">土耳其语</a></li>
+</ul>
+
+<h1><a id="user-content-rails-风格指南" class="anchor" href="#rails-风格指南" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Rails 风格指南</h1>
+
+<p>这份 Rails 风格指南推荐的是 Rails 的最佳实践，现实世界中的 Rails  程序员据此可以写出可维护的高质量代码。我们只说实际使用中的用法。指南再好，但里面说的过于理想化结果大家拒绝使用或者可能根本没人用，又有何意义。</p>
+
+<p>本指南分为几个小节，每一小节由几条相关的规则构成。我尽力在每条规则后面说明理由（如果省略了说明，那是因为其理由显而易见）。</p>
+
+<p>这些规则不是我凭空想象出来的——它们中的绝大部分来自我多年以来作为职业软件工程师的经验，来自 Rails  社区成员的反馈和建议，以及许多备受推崇的 Rails 编程资源。</p>
+
+<h2><a id="user-content-目录" class="anchor" href="#目录" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>目录</h2>
+
+<ul>
+<li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
+<li><a href="#%E8%B7%AF%E7%94%B1">路由</a></li>
+<li><a href="#%E6%8E%A7%E5%88%B6%E5%99%A8">控制器</a></li>
+<li><a href="#%E6%A8%A1%E5%9E%8B">模型</a>
+
+<ul>
+<li><a href="#activerecord">ActiveRecord</a></li>
+<li><a href="#activerecord-%E6%9F%A5%E8%AF%A2">ActiveRecord 查询</a></li>
+</ul></li>
+<li><a href="#%E8%BF%81%E7%A7%BB">迁移</a></li>
+<li><a href="#%E8%A7%86%E5%9B%BE">视图</a></li>
+<li><a href="#%E5%9B%BD%E9%99%85%E5%8C%96">国际化</a></li>
+<li><a href="#assets">Assets</a></li>
+<li><a href="#mailers">Mailers</a></li>
+<li><a href="#time">Time</a></li>
+<li><a href="#bundler">Bundler</a></li>
+<li><a href="#%E6%9C%89%E7%BC%BA%E9%99%B7%E7%9A%84-gem">有缺陷的 Gem</a></li>
+<li><a href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86">进程管理</a></li>
+</ul>
+
+<h2><a id="user-content-配置" class="anchor" href="#配置" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>配置</h2>
+
+<ul>
+<li><p><a name="user-content-config-initializers"></a>
+自定义的初始化代码应放在 <code>config/initializers</code> 目录下。 Initializers 目录中的代码在应用启动时被执行。
+<sup>[<a href="#config-initializers">link</a>]</sup></p></li>
+<li><p><a name="user-content-gem-initializers"></a>
+每个 gem 的初始化代码应放在单独的文件中，并且文件名应与 gem 的名称相同。例如： <code>carrierwave.rb</code>, <code>active_admin.rb</code>。
+<sup>[<a href="#gem-initializers">link</a>]</sup></p></li>
+<li><p><a name="user-content-dev-test-prod-configs"></a>
+相应地调整开发环境、测试环境及生产环境的配置（修改 <code>config/environments/</code> 目录下对应的文件）
+<sup>[<a href="#dev-test-prod-configs">link</a>]</sup></p>
+
+<ul>
+<li><p>添加需要预编译的额外静态资源文件（如果有的话）：</p>
+
+<div class="highlight highlight-source-ruby"><pre>  <span class="pl-c"># config/environments/production.rb</span>
+  <span class="pl-c"># 预编译额外的静态资源文件(application.js, application.css, 以及所有已经被加入的非 JS 或 CSS 的文件)</span>
+  config.assets.precompile <span class="pl-k">+=</span> <span class="pl-s"><span class="pl-pds">%w(</span> rails_admin/rails_admin.css rails_admin/rails_admin.js <span class="pl-pds">)</span></span></pre></div></li>
+</ul></li>
+<li><p><a name="user-content-app-config"></a>
+将所有环境下都通用的配置放在 <code>config/application.rb</code> 文件中。
+<sup>[<a href="#app-config">link</a>]</sup></p></li>
+<li><p><a name="user-content-staging-like-prod"></a>
+创建一个与生产环境高度相似的 <code>staging</code> 环境。
+<sup>[<a href="#staging-like-prod">link</a>]</sup></p></li>
+<li><p><a name="user-content-yaml-config"></a>
+其它配置应保存在 YAML 文件中，存放在 <code>config/</code> 目录下。
+<sup>[<a href="#yaml-config">link</a>]</sup></p>
+
+<p>从 Rails 4.2 开始，可以通过 <code>config_for</code> 这个新方法轻松地加载 YAML 配置文件：</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">Rails</span>::<span class="pl-c1">Application</span>.config_for(<span class="pl-c1">:yaml_file</span>)</pre></div></li>
+</ul>
+
+<h2><a id="user-content-路由" class="anchor" href="#路由" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>路由</h2>
+
+<ul>
+<li><p><a name="user-content-member-collection-routes"></a>
+当需要为一个 RESTful 资源添加动作时（你真的需要吗？），应使用 <code>member</code> 路由和 <code>collection</code> 路由。
+<sup>[<a href="#member-collection-routes">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+get <span class="pl-s"><span class="pl-pds">'</span>subscriptions/:id/unsubscribe<span class="pl-pds">'</span></span>
+resources <span class="pl-c1">:subscriptions</span>
+
+<span class="pl-c"># 好</span>
+resources <span class="pl-c1">:subscriptions</span> <span class="pl-k">do</span>
+  get <span class="pl-s"><span class="pl-pds">'</span>unsubscribe<span class="pl-pds">'</span></span>, <span class="pl-c1">on:</span> <span class="pl-c1">:member</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 差</span>
+get <span class="pl-s"><span class="pl-pds">'</span>photos/search<span class="pl-pds">'</span></span>
+resources <span class="pl-c1">:photos</span>
+
+<span class="pl-c"># 好</span>
+resources <span class="pl-c1">:photos</span> <span class="pl-k">do</span>
+  get <span class="pl-s"><span class="pl-pds">'</span>search<span class="pl-pds">'</span></span>, <span class="pl-c1">on:</span> <span class="pl-c1">:collection</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-many-member-collection-routes"></a>
+当需要定义多个 <code>member/collection</code> 路由时，应使用块结构。
+<sup>[<a href="#many-member-collection-routes">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre>resources <span class="pl-c1">:subscriptions</span> <span class="pl-k">do</span>
+  member <span class="pl-k">do</span>
+    get <span class="pl-s"><span class="pl-pds">'</span>unsubscribe<span class="pl-pds">'</span></span>
+    <span class="pl-c"># 更多路由</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+resources <span class="pl-c1">:photos</span> <span class="pl-k">do</span>
+  collection <span class="pl-k">do</span>
+    get <span class="pl-s"><span class="pl-pds">'</span>search<span class="pl-pds">'</span></span>
+    <span class="pl-c"># 更多路由</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-nested-routes"></a>
+使用嵌套路由(nested routes)，它可以更有效地表现 ActiveRecord 模型之间的关系。
+<sup>[<a href="#nested-routes">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">Post<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  has_many <span class="pl-c1">:comments</span>
+<span class="pl-k">end</span>
+
+<span class="pl-k">class</span> <span class="pl-en">Comments<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  belongs_to <span class="pl-c1">:post</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c"># routes.rb</span>
+resources <span class="pl-c1">:posts</span> <span class="pl-k">do</span>
+  resources <span class="pl-c1">:comments</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-namespaced-routes"></a>
+使用命名空间路由来归类相关的动作。
+<sup>[<a href="#namespaced-routes">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre>namespace <span class="pl-c1">:admin</span> <span class="pl-k">do</span>
+  <span class="pl-c"># 将请求 /admin/products/* 交由 Admin::ProductsController 处理</span>
+  <span class="pl-c"># (app/controllers/admin/products_controller.rb)</span>
+  resources <span class="pl-c1">:products</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-no-wild-routes"></a>
+不要使用旧式的控制器路由。这种路由会让控制器的所有动作都通过 GET 请求调用。
+<sup>[<a href="#no-wild-routes">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 非常差</span>
+match <span class="pl-s"><span class="pl-pds">'</span>:controller(/:action(/:id(.:format)))<span class="pl-pds">'</span></span></pre></div></li>
+<li><p><a name="user-content-no-match-routes"></a>
+不要使用 <code>match</code> 来定义任何路由，除非确实需要将多种请求映射到某个动作，这时可以通过 <code>via</code> 选项来指定请求类型，如 <code>[:get, :post, :patch, :put, :delete]</code>。
+<sup>[<a href="#no-match-routes">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-控制器" class="anchor" href="#控制器" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>控制器</h2>
+
+<ul>
+<li><p><a name="user-content-skinny-controllers"></a>
+控制器应该保持苗条 ― 它们应该只为视图层提供数据，不应包含任何业务逻辑（所有业务逻辑都应当放在模型里）。
+<sup>[<a href="#skinny-controllers">link</a>]</sup></p></li>
+<li><p><a name="user-content-one-method"></a>
+每个控制器的动作（理论上）应当只调用一个除了初始的 find 或 new 之外的方法。
+<sup>[<a href="#one-method">link</a>]</sup></p></li>
+<li><p><a name="user-content-shared-instance-variables"></a>
+控制器与视图之间共享不超过两个实例变量。
+<sup>[<a href="#shared-instance-variables">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-模型" class="anchor" href="#模型" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>模型</h2>
+
+<ul>
+<li><p><a name="user-content-model-classes"></a>
+自由地引入不是 ActiveRecord 的模型类。
+<sup>[<a href="#model-classes">link</a>]</sup></p></li>
+<li><p><a name="user-content-meaningful-model-names"></a>
+模型的命名应有意义（但简短）且不含缩写。
+<sup>[<a href="#meaningful-model-names">link</a>]</sup></p></li>
+<li><p><a name="user-content-activeattr-gem"></a>
+如果需要模型类有与 ActiveRecord 类似的行为（如验证），但又不想有 ActiveRecord 的数据库功能，应使用 <a href="https://github.com/cgriego/active_attr">ActiveAttr</a> 这个 gem。
+<sup>[<a href="#activeattr-gem">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">Message</span>
+  <span class="pl-k">include</span> <span class="pl-c1">ActiveAttr</span>::<span class="pl-c1">Model</span>
+
+  attribute <span class="pl-c1">:name</span>
+  attribute <span class="pl-c1">:email</span>
+  attribute <span class="pl-c1">:content</span>
+  attribute <span class="pl-c1">:priority</span>
+
+  attr_accessible <span class="pl-c1">:name</span>, <span class="pl-c1">:email</span>, <span class="pl-c1">:content</span>
+
+  validates_presence_of <span class="pl-c1">:name</span>
+  validates_format_of <span class="pl-c1">:email</span>, <span class="pl-c1">:with</span> =&gt; <span class="pl-sr"><span class="pl-pds">/</span><span class="pl-cce">\A</span><span class="pl-pds">[-a-z0-9_+<span class="pl-cce">\.</span>]</span>+<span class="pl-cce">\@</span><span class="pl-sr">(<span class="pl-pds">[-a-z0-9]</span>+<span class="pl-cce">\.</span>)</span>+<span class="pl-pds">[a-z0-9]</span><span class="pl-sra">{2,4}</span><span class="pl-cce">\z</span><span class="pl-pds">/i</span></span>
+  validates_length_of <span class="pl-c1">:content</span>, <span class="pl-c1">:maximum</span> =&gt; <span class="pl-c1">500</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>更完整的示例请参考 <a href="http://railscasts.com/episodes/326-activeattr">RailsCast on the subject</a>。</p></li>
+</ul>
+
+<h3><a id="user-content-activerecord" class="anchor" href="#activerecord" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>ActiveRecord</h3>
+
+<ul>
+<li><p><a name="user-content-keep-ar-defaults"></a>
+避免改动缺省的 ActiveRecord 惯例（表的名字、主键等），除非你有一个充分的理由（比如，不受你控制的数据库）。
+<sup>[<a href="#keep-ar-defaults">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差 - 如果你能更改数据库的 schema，那就不要这样写</span>
+<span class="pl-k">class</span> <span class="pl-en">Transaction<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  <span class="pl-v">self</span>.table_name <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>order<span class="pl-pds">'</span></span>
+  ...
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-macro-style-methods"></a>
+把宏风格的方法调用（<code>has_many</code>, <code>validates</code> 等）放在类定义语句的最前面。
+<sup>[<a href="#macro-style-methods">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  <span class="pl-c"># 默认的 scope 放在最前（如果有的话）</span>
+  default_scope { where(<span class="pl-c1">active:</span> <span class="pl-c1">true</span>) }
+
+  <span class="pl-c"># 接下来是常量初始化</span>
+  <span class="pl-c1">COLORS</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">%w(</span>red green blue<span class="pl-pds">)</span></span>
+
+  <span class="pl-c"># 然后是 attr 相关的宏</span>
+  <span class="pl-k">attr_accessor</span> <span class="pl-c1">:formatted_date_of_birth</span>
+
+  attr_accessible <span class="pl-c1">:login</span>, <span class="pl-c1">:first_name</span>, <span class="pl-c1">:last_name</span>, <span class="pl-c1">:email</span>, <span class="pl-c1">:password</span>
+
+  <span class="pl-c"># 紧接着是与关联有关的宏</span>
+  belongs_to <span class="pl-c1">:country</span>
+
+  has_many <span class="pl-c1">:authentications</span>, <span class="pl-c1">dependent:</span> <span class="pl-c1">:destroy</span>
+
+  <span class="pl-c"># 以及与验证有关的宏</span>
+  validates <span class="pl-c1">:email</span>, <span class="pl-c1">presence:</span> <span class="pl-c1">true</span>
+  validates <span class="pl-c1">:username</span>, <span class="pl-c1">presence:</span> <span class="pl-c1">true</span>
+  validates <span class="pl-c1">:username</span>, <span class="pl-c1">uniqueness:</span> { <span class="pl-c1">case_sensitive:</span> <span class="pl-c1">false</span> }
+  validates <span class="pl-c1">:username</span>, <span class="pl-c1">format:</span> { <span class="pl-c1">with:</span> <span class="pl-sr"><span class="pl-pds">/</span><span class="pl-cce">\A</span><span class="pl-pds">[A-Za-z][A-Za-z0-9._-]</span><span class="pl-sra">{2,19}</span><span class="pl-cce">\z</span><span class="pl-pds">/</span></span> }
+  validates <span class="pl-c1">:password</span>, <span class="pl-c1">format:</span> { <span class="pl-c1">with:</span> <span class="pl-sr"><span class="pl-pds">/</span><span class="pl-cce">\A\S</span><span class="pl-sra">{8,128}</span><span class="pl-cce">\z</span><span class="pl-pds">/</span></span>, <span class="pl-c1">allow_nil:</span> <span class="pl-c1">true</span>}
+
+  <span class="pl-c"># 下面是回调方法</span>
+  before_save <span class="pl-c1">:cook</span>
+  before_save <span class="pl-c1">:update_username_lower</span>
+
+  <span class="pl-c"># 其它的宏（如 devise）应放在回调方法之后</span>
+
+  ...
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-has-many-through"></a>
+<code>has_many :through</code> 优于 <code>has_and_belongs_to_many</code>。 使用 <code>has_many :through</code> 允许 join 模型有附加的属性及验证。
+<sup>[<a href="#has-many-through">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 不太好 - 使用 has_and_belongs_to_many</span>
+<span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  has_and_belongs_to_many <span class="pl-c1">:groups</span>
+<span class="pl-k">end</span>
+
+<span class="pl-k">class</span> <span class="pl-en">Group<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  has_and_belongs_to_many <span class="pl-c1">:users</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 更好 - 使用 has_many :through</span>
+<span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  has_many <span class="pl-c1">:memberships</span>
+  has_many <span class="pl-c1">:groups</span>, <span class="pl-c1">through:</span> <span class="pl-c1">:memberships</span>
+<span class="pl-k">end</span>
+
+<span class="pl-k">class</span> <span class="pl-en">Membership<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  belongs_to <span class="pl-c1">:user</span>
+  belongs_to <span class="pl-c1">:group</span>
+<span class="pl-k">end</span>
+
+<span class="pl-k">class</span> <span class="pl-en">Group<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  has_many <span class="pl-c1">:memberships</span>
+  has_many <span class="pl-c1">:users</span>, <span class="pl-c1">through:</span> <span class="pl-c1">:memberships</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-read-attribute"></a>
+<code>self[:attribute]</code> 比 <code>read_attribute(:attribute)</code> 更好。
+<sup>[<a href="#read-attribute">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-k">def</span> <span class="pl-en">amount</span>
+  read_attribute(<span class="pl-c1">:amount</span>) <span class="pl-k">*</span> <span class="pl-c1">100</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 好</span>
+<span class="pl-k">def</span> <span class="pl-en">amount</span>
+  <span class="pl-v">self</span>[<span class="pl-c1">:amount</span>] <span class="pl-k">*</span> <span class="pl-c1">100</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-write-attribute"></a>
+<code>self[:attribute] = value</code> 优于 <code>write_attribute(:attribute, value)</code>。
+<sup>[<a href="#write-attribute">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-k">def</span> <span class="pl-en">amount</span>
+  write_attribute(<span class="pl-c1">:amount</span>, <span class="pl-c1">100</span>)
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 好</span>
+<span class="pl-k">def</span> <span class="pl-en">amount</span>
+  <span class="pl-v">self</span>[<span class="pl-c1">:amount</span>] <span class="pl-k">=</span> <span class="pl-c1">100</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-sexy-validations"></a>
+总是使用新式的 <a href="http://thelucid.com/2010/01/08/sexy-validation-in-edge-rails-rails-3/">"sexy" 
+验证</a>。
+<sup>[<a href="#sexy-validations">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+validates_presence_of <span class="pl-c1">:email</span>
+validates_length_of <span class="pl-c1">:email</span>, <span class="pl-c1">maximum:</span> <span class="pl-c1">100</span>
+
+<span class="pl-c"># 好</span>
+validates <span class="pl-c1">:email</span>, <span class="pl-c1">presence:</span> <span class="pl-c1">true</span>, <span class="pl-c1">length:</span> { <span class="pl-c1">maximum:</span> <span class="pl-c1">100</span> }</pre></div></li>
+<li><p><a name="user-content-custom-validator-file"></a>
+当一个自定义的验证规则使用次数超过一次时，或该验证规则是基于正则表达式时，应该创建一个自定义的验证规则文件。
+<sup>[<a href="#custom-validator-file">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-k">class</span> <span class="pl-en">Person</span>
+  validates <span class="pl-c1">:email</span>, <span class="pl-c1">format:</span> { <span class="pl-c1">with:</span> <span class="pl-sr"><span class="pl-pds">/</span><span class="pl-cce">\A</span><span class="pl-sr">(<span class="pl-pds">[^@<span class="pl-cce">\s</span>]</span>+)</span>@<span class="pl-sr">(<span class="pl-sr">(?:<span class="pl-pds">[-a-z0-9]</span>+<span class="pl-cce">\.</span>)</span>+<span class="pl-pds">[a-z]</span>{2,})</span><span class="pl-cce">\z</span><span class="pl-pds">/i</span></span> }
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 好</span>
+<span class="pl-k">class</span> <span class="pl-en">EmailValidator<span class="pl-e"> &lt; ActiveModel::EachValidator</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">validate_each</span>(<span class="pl-smi">record</span>, <span class="pl-smi">attribute</span>, <span class="pl-smi">value</span>)
+    record.errors[attribute] <span class="pl-k">&lt;&lt;</span> (options[<span class="pl-c1">:message</span>] <span class="pl-k">||</span> <span class="pl-s"><span class="pl-pds">'</span>is not a valid email<span class="pl-pds">'</span></span>) <span class="pl-k">unless</span> value <span class="pl-k">=~</span> <span class="pl-sr"><span class="pl-pds">/</span><span class="pl-cce">\A</span><span class="pl-sr">(<span class="pl-pds">[^@<span class="pl-cce">\s</span>]</span>+)</span>@<span class="pl-sr">(<span class="pl-sr">(?:<span class="pl-pds">[-a-z0-9]</span>+<span class="pl-cce">\.</span>)</span>+<span class="pl-pds">[a-z]</span>{2,})</span><span class="pl-cce">\z</span><span class="pl-pds">/i</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+<span class="pl-k">class</span> <span class="pl-en">Person</span>
+  validates <span class="pl-c1">:email</span>, <span class="pl-c1">email:</span> <span class="pl-c1">true</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-app-validators"></a>
+自定义验证规则应放在 <code>app/validators</code> 目录下。
+<sup>[<a href="#app-validators">link</a>]</sup></p></li>
+<li><p><a name="user-content-custom-validators-gem"></a>
+如果你在维护数个相关的应用，或验证规则本身足够通用，可以考虑将自定义的验证规则抽象为一个共用的 gem。
+<sup>[<a href="#custom-validators-gem">link</a>]</sup></p></li>
+<li><p><a name="user-content-named-scopes"></a>
+自由地使用命名 scope。
+<sup>[<a href="#named-scopes">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  scope <span class="pl-c1">:active</span>, <span class="pl-k">-</span><span class="pl-k">&gt;</span> { where(<span class="pl-c1">active:</span> <span class="pl-c1">true</span>) }
+  scope <span class="pl-c1">:inactive</span>, <span class="pl-k">-</span><span class="pl-k">&gt;</span> { where(<span class="pl-c1">active:</span> <span class="pl-c1">false</span>) }
+
+  scope <span class="pl-c1">:with_orders</span>, <span class="pl-k">-</span><span class="pl-k">&gt;</span> { joins(<span class="pl-c1">:orders</span>).select(<span class="pl-s"><span class="pl-pds">'</span>distinct(users.id)<span class="pl-pds">'</span></span>) }
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-named-scope-class"></a>
+当一个由 lambda 和参数定义的命名 scope 太过复杂时，
+更好的方式是创建一个具有同样用途并返回 <code>ActiveRecord::Relation</code> 对象的类方法。这很可能让 scope 更加精简。
+<sup>[<a href="#named-scope-class">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">self.with_orders</span>
+    joins(<span class="pl-c1">:orders</span>).select(<span class="pl-s"><span class="pl-pds">'</span>distinct(users.id)<span class="pl-pds">'</span></span>)
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>注意这种方式不允许命名 socpe 那样的链式调用。例如：</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 不能链式调用</span>
+<span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">User.old</span>
+    where(<span class="pl-s"><span class="pl-pds">'</span>age &gt; ?<span class="pl-pds">'</span></span>, <span class="pl-c1">80</span>)
+  <span class="pl-k">end</span>
+
+  <span class="pl-k">def</span> <span class="pl-en">User.heavy</span>
+    where(<span class="pl-s"><span class="pl-pds">'</span>weight &gt; ?<span class="pl-pds">'</span></span>, <span class="pl-c1">200</span>)
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>这种方式下 <code>old</code> 和 <code>heavy</code> 可以单独工作，但不能执行 <code>User.old.heavy</code>。
+若要链式调用，请使用下面的代码：</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 可以链式调用</span>
+<span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  scope <span class="pl-c1">:old</span>, <span class="pl-k">-</span><span class="pl-k">&gt;</span> { where(<span class="pl-s"><span class="pl-pds">'</span>age &gt; 60<span class="pl-pds">'</span></span>) }
+  scope <span class="pl-c1">:heavy</span>, <span class="pl-k">-</span><span class="pl-k">&gt;</span> { where(<span class="pl-s"><span class="pl-pds">'</span>weight &gt; 200<span class="pl-pds">'</span></span>) }
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-beware-update-attribute"></a>
+注意
+<a href="http://api.rubyonrails.org/classes/ActiveRecord/Persistence.html#method-i-update_attribute"><code>update_attribute</code></a>
+方法的行为。它不运行模型验证（与 <code>update_attributes</code> 不同），因此可能弄乱模型的状态。
+<sup>[<a href="#beware-update-attribute">link</a>]</sup></p></li>
+<li><p><a name="user-content-user-friendly-urls"></a>
+应使用对用户友好的 URL。URL 中应显示模型的一些具有描述性的属性，而不是仅仅显示 <code>id</code>。有多种方法可以达到这个目的：
+<sup>[<a href="#user-friendly-urls">link</a>]</sup></p>
+
+<ul>
+<li><p>重写模型的 <code>to_param</code> 方法。Rails 使用该方法为对象创建 URL。该方法默认会以字符串形式返回记录的 <code>id</code> 项。
+可以重写该方法以包含其它可读性强的属性。</p>
+
+<div class="highlight highlight-source-ruby"><pre>  <span class="pl-k">class</span> <span class="pl-en">Person</span>
+    <span class="pl-k">def</span> <span class="pl-en">to_param</span>
+      <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pse">#{</span><span class="pl-s1">id</span><span class="pl-pse"><span class="pl-s1">}</span></span> <span class="pl-pse">#{</span><span class="pl-s1">name</span><span class="pl-pse"><span class="pl-s1">}</span></span><span class="pl-pds">"</span></span>.parameterize
+    <span class="pl-k">end</span>
+  <span class="pl-k">end</span></pre></div></li>
+</ul>
+
+<p>为了将结果转换为一个 URL 友好的值，字符串应该调用 <code>parameterize</code> 方法。
+对象的 <code>id</code> 属性值需要位于 URL 的开头，以便使用 ActiveRecord 的 <code>find</code> 方法查找对象。</p>
+
+<ul>
+<li><p>使用 <code>friendly_id</code> 这个 gem。它允许使用对象的一些描述性属性而非 <code>id</code> 来创建可读性强的 URL。</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">Person</span>
+  <span class="pl-k">extend</span> <span class="pl-c1">FriendlyId</span>
+  friendly_id <span class="pl-c1">:name</span>, <span class="pl-c1">use:</span> <span class="pl-c1">:slugged</span>
+<span class="pl-k">end</span></pre></div></li>
+</ul>
+
+<p>查看 <a href="https://github.com/norman/friendly_id">gem documentation</a> 以获得更多 <code>friendly_id</code> 的使用信息。</p></li>
+<li><p><a name="user-content-find-each"></a>
+应使用 <code>find_each</code> 来迭代一系列 ActiveRecord 对象。用循环来处理数据库中的记录集（如 <code>all</code> 方法）是非常低效率的，因为循环试图一次性得到所有对象。而批处理方法允许一批批地处理记录，因此需要占用的内存大幅减少。
+<sup>[<a href="#find-each">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">Person</span>.all.each <span class="pl-k">do </span>|<span class="pl-smi">person</span>|
+  person.do_awesome_stuff
+<span class="pl-k">end</span>
+
+<span class="pl-c1">Person</span>.where(<span class="pl-s"><span class="pl-pds">'</span>age &gt; 21<span class="pl-pds">'</span></span>).each <span class="pl-k">do </span>|<span class="pl-smi">person</span>|
+  person.party_all_night!
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">Person</span>.find_each <span class="pl-k">do </span>|<span class="pl-smi">person</span>|
+  person.do_awesome_stuff
+<span class="pl-k">end</span>
+
+<span class="pl-c1">Person</span>.where(<span class="pl-s"><span class="pl-pds">'</span>age &gt; 21<span class="pl-pds">'</span></span>).find_each <span class="pl-k">do </span>|<span class="pl-smi">person</span>|
+  person.party_all_night!
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-before_destroy"></a>
+因为 <a href="https://github.com/rails/rails/issues/3458">Rails 为有依赖关系的关联添加了回调方法</a>，应总是调用
+<code>before_destroy</code> 回调方法，调用该方法并启用 <code>prepend: true</code> 选项会执行验证。
+<sup>[<a href="#before_destroy">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差——即使 super_admin 返回 true，roles 也会自动删除</span>
+has_many <span class="pl-c1">:roles</span>, <span class="pl-c1">dependent:</span> <span class="pl-c1">:destroy</span>
+
+before_destroy <span class="pl-c1">:ensure_deletable</span>
+
+<span class="pl-k">def</span> <span class="pl-en">ensure_deletable</span>
+  fail <span class="pl-s"><span class="pl-pds">"</span>Cannot delete super admin.<span class="pl-pds">"</span></span> <span class="pl-k">if</span> super_admin?
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 好</span>
+has_many <span class="pl-c1">:roles</span>, <span class="pl-c1">dependent:</span> <span class="pl-c1">:destroy</span>
+
+before_destroy <span class="pl-c1">:ensure_deletable</span>, <span class="pl-c1">prepend:</span> <span class="pl-c1">true</span>
+
+<span class="pl-k">def</span> <span class="pl-en">ensure_deletable</span>
+  fail <span class="pl-s"><span class="pl-pds">"</span>Cannot delete super admin.<span class="pl-pds">"</span></span> <span class="pl-k">if</span> super_admin?
+<span class="pl-k">end</span></pre></div></li>
+</ul>
+
+<h3><a id="user-content-activerecord-查询" class="anchor" href="#activerecord-查询" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>ActiveRecord 查询</h3>
+
+<ul>
+<li><p><a name="user-content-avoid-interpolation"></a>
+不要在查询中使用字符串插值，它会使你的代码有被 SQL 注入攻击的风险。
+<sup>[<a href="#avoid-interpolation">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差——插值的参数不会被转义</span>
+<span class="pl-c1">Client</span>.where(<span class="pl-s"><span class="pl-pds">"</span>orders_count = <span class="pl-pse">#{</span><span class="pl-s1">params[<span class="pl-c1">:orders</span>]</span><span class="pl-pse"><span class="pl-s1">}</span></span><span class="pl-pds">"</span></span>)
+
+<span class="pl-c"># 好——参数会被适当转义</span>
+<span class="pl-c1">Client</span>.where(<span class="pl-s"><span class="pl-pds">'</span>orders_count = ?<span class="pl-pds">'</span></span>, params[<span class="pl-c1">:orders</span>])</pre></div></li>
+<li><p><a name="user-content-named-placeholder"></a>
+当查询中有超过 1 个占位符时，应考虑使用名称占位符，而非位置占位符。
+<sup>[<a href="#named-placeholder">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 一般般</span>
+<span class="pl-c1">Client</span>.where(
+  <span class="pl-s"><span class="pl-pds">'</span>created_at &gt;= ? AND created_at &lt;= ?<span class="pl-pds">'</span></span>,
+  params[<span class="pl-c1">:start_date</span>], params[<span class="pl-c1">:end_date</span>]
+)
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">Client</span>.where(
+  <span class="pl-s"><span class="pl-pds">'</span>created_at &gt;= :start_date AND created_at &lt;= :end_date<span class="pl-pds">'</span></span>,
+  <span class="pl-c1">start_date:</span> params[<span class="pl-c1">:start_date</span>], <span class="pl-c1">end_date:</span> params[<span class="pl-c1">:end_date</span>]
+)</pre></div></li>
+<li><p><a name="user-content-find"></a>
+当只需要通过 id 查询单个记录时，优先使用 <code>find</code> 而不是 <code>where</code>。
+<sup>[<a href="#find">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">User</span>.where(<span class="pl-c1">id:</span> id).take
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">User</span>.find(id)</pre></div></li>
+<li><p><a name="user-content-find_by"></a>
+当只需要通过属性查询单个记录时，优先使用 <code>find_by</code> 而不是 <code>where</code>。
+<sup>[<a href="#find_by">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">User</span>.where(<span class="pl-c1">first_name:</span> <span class="pl-s"><span class="pl-pds">'</span>Bruce<span class="pl-pds">'</span></span>, <span class="pl-c1">last_name:</span> <span class="pl-s"><span class="pl-pds">'</span>Wayne<span class="pl-pds">'</span></span>).first
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">User</span>.find_by(<span class="pl-c1">first_name:</span> <span class="pl-s"><span class="pl-pds">'</span>Bruce<span class="pl-pds">'</span></span>, <span class="pl-c1">last_name:</span> <span class="pl-s"><span class="pl-pds">'</span>Wayne<span class="pl-pds">'</span></span>)</pre></div></li>
+<li><p><a name="user-content-find_each"></a>
+当需要处理多条记录时，应使用 <code>find_each</code>。
+<sup>[<a href="#find_each">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差——一次性加载所有记录</span>
+<span class="pl-c"># 当 users 表有成千上万条记录时，非常低效</span>
+<span class="pl-c1">User</span>.all.each <span class="pl-k">do </span>|<span class="pl-smi">user</span>|
+  <span class="pl-c1">NewsMailer</span>.weekly(user).deliver_now
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 好——分批检索记录</span>
+<span class="pl-c1">User</span>.find_each <span class="pl-k">do </span>|<span class="pl-smi">user</span>|
+  <span class="pl-c1">NewsMailer</span>.weekly(user).deliver_now
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-where-not"></a>
+<code>where.not</code> 比书写 SQL 更好。
+<sup>[<a href="#where-not">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">User</span>.where(<span class="pl-s"><span class="pl-pds">"</span>id != ?<span class="pl-pds">"</span></span>, id)
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">User</span>.where.<span class="pl-k">not</span>(<span class="pl-c1">id:</span> id)</pre></div></li>
+</ul>
+
+<h2><a id="user-content-迁移" class="anchor" href="#迁移" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>迁移</h2>
+
+<ul>
+<li><p><a name="user-content-schema-version"></a>
+应使用版本控制工具记录 <code>schema.rb</code> （或 <code>structure.sql</code> ）的变化。 
+<sup>[<a href="#schema-version">link</a>]</sup></p></li>
+<li><p><a name="user-content-db-schema-load"></a>
+应使用 <code>rake db:scheme:load</code> 而不是 <code>rake db:migrate</code> 来初始化空数据库。
+<sup>[<a href="#db-schema-load">link</a>]</sup></p></li>
+<li><p><a name="user-content-default-migration-values"></a>
+应在迁移文件中设置默认值，而不是在应用层面设置。
+<sup>[<a href="#default-migration-values">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差——在应用中设置默认值</span>
+<span class="pl-k">def</span> <span class="pl-en">amount</span>
+  <span class="pl-v">self</span>[<span class="pl-c1">:amount</span>] <span class="pl-k">or</span> <span class="pl-c1">0</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>虽然许多 Rails 开发者建议在 Rails 中强制使用表的默认值，但这会使数据受到许多应用 bug 的影响，因而导致应用极其难以维护。考虑到大多数有一定规模的 Rails 应用都与其它应用共享数据库，保持应用的数据完整性几乎是不可能的。</p></li>
+<li><p><a name="user-content-foreign-key-constraints"></a>
+务必使用外键约束。在 Rails 4.2 中，ActiveRecord 本身已经支持外键约束。
+<sup>[<a href="#foreign-key-constraints">link</a>]</sup></p></li>
+<li><p><a name="user-content-change-vs-up-down"></a>
+书写建设性的迁移（添加表或列）时，应使用 <code>change</code> 方法而不是 <code>up</code> 或 <code>down</code> 方法。
+<sup>[<a href="#change-vs-up-down">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 老式写法</span>
+<span class="pl-k">class</span> <span class="pl-en">AddNameToPeople<span class="pl-e"> &lt; ActiveRecord::Migration</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">up</span>
+    add_column <span class="pl-c1">:people</span>, <span class="pl-c1">:name</span>, <span class="pl-c1">:string</span>
+  <span class="pl-k">end</span>
+
+  <span class="pl-k">def</span> <span class="pl-en">down</span>
+    remove_column <span class="pl-c1">:people</span>, <span class="pl-c1">:name</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span>
+
+<span class="pl-c"># 新式写法（更好）</span>
+<span class="pl-k">class</span> <span class="pl-en">AddNameToPeople<span class="pl-e"> &lt; ActiveRecord::Migration</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">change</span>
+    add_column <span class="pl-c1">:people</span>, <span class="pl-c1">:name</span>, <span class="pl-c1">:string</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div></li>
+<li><p><a name="user-content-no-model-class-migrations"></a>
+不要在迁移中使用模型类。由于模型的变化，模型类也一直处在变化当中，过去运行正常的迁移可能不知什么时候就不能正常进行了。
+<sup>[<a href="#no-model-class-migrations">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-视图" class="anchor" href="#视图" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>视图</h2>
+
+<ul>
+<li><p><a name="user-content-no-direct-model-view"></a>
+不要直接从视图调用模型层。
+<sup>[<a href="#no-direct-model-view">link</a>]</sup></p></li>
+<li><p><a name="user-content-no-complex-view-formatting"></a>
+复杂的格式化不应放在视图中，而应提取为视图 helper 或模型中的方法。
+<sup>[<a href="#no-complex-view-formatting">link</a>]</sup></p></li>
+<li><p><a name="user-content-partials"></a>
+应使用 partial 模版与布局来减少代码重复。
+<sup>[<a href="#partials">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-国际化" class="anchor" href="#国际化" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>国际化</h2>
+
+<ul>
+<li><p><a name="user-content-locale-texts"></a>
+不应在视图、模型或控制器里添加语言相关的设置，应在 <code>config/locales</code> 目录下进行设置。
+<sup>[<a href="#locale-texts">link</a>]</sup></p></li>
+<li><p><a name="user-content-translated-labels"></a>
+当 ActiveRecord 模型的标签需要被翻译时，应使用<code>activerecord</code> scope:
+<sup>[<a href="#translated-labels">link</a>]</sup></p>
+
+<pre><code>en:
+  activerecord:
+    models:
+      user: Member
+    attributes:
+      user:
+        name: "Full name"
+</code></pre>
+
+<p>然后 <code>User.model_name.human</code> 会返回 "Member" ，而 <code>User.human_attribute_name("name")</code> 会返回 "Full name"。这些属性的翻译会作为视图中的标签。</p></li>
+<li><p><a name="user-content-organize-locale-files"></a>
+把在视图中使用的文字与 ActiveRecord 的属性翻译分开。把模型使用的语言文件放在 <code>models</code> 目录下，把视图使用的文字放在 <code>views</code> 目录下。
+<sup>[<a href="#organize-locale-files">link</a>]</sup></p>
+
+<ul>
+<li><p>当使用额外目录来设置语言文件时，应在 <code>application.rb</code> 文件里列出这些目录以加载设置。</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># config/application.rb</span>
+config.i18n.load_path <span class="pl-k">+=</span> <span class="pl-c1">Dir</span>[<span class="pl-c1">Rails</span>.root.join(<span class="pl-s"><span class="pl-pds">'</span>config<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>locales<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>**<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>*.{rb,yml}<span class="pl-pds">'</span></span>)]</pre></div></li>
+</ul></li>
+<li><p><a name="user-content-shared-localization"></a>
+把共享的本地化选项，如日期或货币格式，放在 <code>locales</code> 的根目录下。
+<sup>[<a href="#shared-localization">link</a>]</sup></p></li>
+<li><p><a name="user-content-short-i18n"></a>
+应使用精简形式的 I18n 方法： 
+使用 <code>I18n.t</code> 而非 <code>I18n.translate</code>；
+使用 <code>I18n.l</code> 而非 <code>I18n.localize</code>。
+<sup>[<a href="#short-i18n">link</a>]</sup></p></li>
+<li><p><a name="user-content-lazy-lookup"></a>
+应使用 "懒惰" 查询来获取视图中使用的文本。假设我们有以下结构：
+<sup>[<a href="#lazy-lookup">link</a>]</sup></p>
+
+<pre><code>en:
+  users:
+    show:
+      title: "User details page"
+</code></pre>
+
+<p><code>users.show.title</code> 的数值能这样被 <code>app/views/users/show.html.haml</code> 获取：</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">=</span> t <span class="pl-s"><span class="pl-pds">'</span>.title<span class="pl-pds">'</span></span></pre></div></li>
+<li><p><a name="user-content-dot-separated-keys"></a>
+应在控制器与模型中使用点分隔的键，而非指定 <code>:scope</code> 选项。点分隔的调用更容易阅读，也更易追踪层级关系。
+<sup>[<a href="#dot-separated-keys">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">I18n</span>.t <span class="pl-c1">:record_invalid</span>, <span class="pl-c1">:scope</span> =&gt; [<span class="pl-c1">:activerecord</span>, <span class="pl-c1">:errors</span>, <span class="pl-c1">:messages</span>]
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">I18n</span>.t <span class="pl-s"><span class="pl-pds">'</span>activerecord.errors.messages.record_invalid<span class="pl-pds">'</span></span></pre></div></li>
+<li><p><a name="user-content-i18n-guides"></a>
+更详细的 Rails i18n 信息可以在 <a href="http://guides.rubyonrails.org/i18n.html">Rails Guides</a> 找到。
+<sup>[<a href="#i18n-guides">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-assets" class="anchor" href="#assets" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Assets</h2>
+
+<p>应使用 <a href="http://guides.rubyonrails.org/asset_pipeline.html">assets pipeline</a> 来管理应用的资源结构。</p>
+
+<ul>
+<li><p><a name="user-content-reserve-app-assets"></a>
+自定义的样式表、JavaScript 文件或图片文件，应放在 <code>app/assets</code> 目录下。
+<sup>[<a href="#reserve-app-assets">link</a>]</sup></p></li>
+<li><p><a name="user-content-lib-assets"></a>
+把自己开发但不好归类的库文件，应放在 <code>lib/assets/</code> 目录下。
+<sup>[<a href="#lib-assets">link</a>]</sup></p></li>
+<li><p><a name="user-content-vendor-assets"></a>
+第三方代码，如 <a href="http://jquery.com/">jQuery</a> 或 <a href="http://twitter.github.com/bootstrap/">bootstrap</a>，应放在 <code>vendor/assets</code> 目录下。
+<sup>[<a href="#vendor-assets">link</a>]</sup></p></li>
+<li><p><a name="user-content-gem-assets"></a>
+尽可能使用资源的 gem 版。例如：
+<a href="https://github.com/rails/jquery-rails">jquery-rails</a>,
+<a href="https://github.com/joliss/jquery-ui-rails">jquery-ui-rails</a>,
+<a href="https://github.com/thomas-mcdonald/bootstrap-sass">bootstrap-sass</a>,
+<a href="https://github.com/zurb/foundation">zurb-foundation</a>
+<sup>[<a href="#gem-assets">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-mailers" class="anchor" href="#mailers" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Mailers</h2>
+
+<ul>
+<li><p><a name="user-content-mailer-name"></a>
+应将 mailer 命名为 <code>SomethingMailer</code>。若没有 Mailer 后缀，不能立即断定它是否为一个 mailer，也不能断定哪个视图与它有关。
+<sup>[<a href="#mailer-name">link</a>]</sup></p></li>
+<li><p><a name="user-content-html-plain-email"></a>
+提供 HTML 与纯文本两份视图模版。
+<sup>[<a href="#html-plain-email">link</a>]</sup></p></li>
+<li><p><a name="user-content-enable-delivery-errors"></a>
+在开发环境下应显示发信失败错误。这些错误默认是关闭的。
+<sup>[<a href="#enable-delivery-errors">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># config/environments/development.rb</span>
+
+config.action_mailer.raise_delivery_errors <span class="pl-k">=</span> <span class="pl-c1">true</span></pre></div></li>
+<li><p><a name="user-content-local-smtp"></a>
+在开发环境下使用诸如 <a href="https://github.com/sj26/mailcatcher">Mailcatcher</a> 的本地 SMTP 服务器。
+<sup>[<a href="#local-smtp">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># config/environments/development.rb</span>
+
+config.action_mailer.smtp_settings <span class="pl-k">=</span> {
+  <span class="pl-c1">address:</span> <span class="pl-s"><span class="pl-pds">'</span>localhost<span class="pl-pds">'</span></span>,
+  <span class="pl-c1">port:</span> <span class="pl-c1">1025</span>,
+  <span class="pl-c"># 更多设置</span>
+}</pre></div></li>
+<li><p><a name="user-content-default-hostname"></a>
+为域名设置默认项。
+<sup>[<a href="#default-hostname">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># config/environments/development.rb</span>
+config.action_mailer.default_url_options <span class="pl-k">=</span> { <span class="pl-c1">host:</span> <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pse">#{</span><span class="pl-s1">local_ip</span><span class="pl-pse"><span class="pl-s1">}</span></span>:3000<span class="pl-pds">"</span></span> }
+
+<span class="pl-c"># config/environments/production.rb</span>
+config.action_mailer.default_url_options <span class="pl-k">=</span> { <span class="pl-c1">host:</span> <span class="pl-s"><span class="pl-pds">'</span>your_site.com<span class="pl-pds">'</span></span> }
+
+<span class="pl-c"># 在 mailer 类中</span>
+default_url_options[<span class="pl-c1">:host</span>] <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>your_site.com<span class="pl-pds">'</span></span></pre></div></li>
+<li><p><a name="user-content-url-not-path-in-email"></a>
+若需要在邮件中添加到网站的超链接，应总是使用 <code>_url</code> 方法，而非
+<code>_path</code> 方法。<code>_url</code> 方法产生的超链接包含域名，而 <code>_path</code>
+方法产生相对链接。
+<sup>[<a href="#url-not-path-in-email">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">You</span> can always find more info about this course
+<span class="pl-k">&lt;</span><span class="pl-k">%=</span> link_to <span class="pl-s"><span class="pl-pds">'</span>here<span class="pl-pds">'</span></span>, course_path(<span class="pl-smi">@course</span>) <span class="pl-s"><span class="pl-pds">%&gt;</span></span>
+<span class="pl-s"></span>
+<span class="pl-s"># 好</span>
+<span class="pl-s">You can always find more info about this course</span>
+<span class="pl-s">&lt;%= link_to 'here', course_url(@course) %<span class="pl-pds">&gt;</span></span></pre></div></li>
+<li><p><a name="user-content-email-addresses"></a>
+正确地设置寄件人与收件人地址的格式。应使用下列格式：
+<sup>[<a href="#email-addresses">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 在你的 mailer 类中</span>
+default <span class="pl-c1">from:</span> <span class="pl-s"><span class="pl-pds">'</span>Your Name &lt;info@your_site.com&gt;<span class="pl-pds">'</span></span></pre></div></li>
+<li><p><a name="user-content-delivery-method-test"></a>
+确保测试环境下的 email 发送方法设置为 <code>test</code>：
+<sup>[<a href="#delivery-method-test">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># config/environments/test.rb</span>
+
+config.action_mailer.delivery_method <span class="pl-k">=</span> <span class="pl-c1">:test</span></pre></div></li>
+<li><p><a name="user-content-delivery-method-smtp"></a>
+开发环境和生产环境下的发送方法应设置为 <code>smtp</code>：
+<sup>[<a href="#delivery-method-smtp">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># config/environments/development.rb, config/environments/production.rb</span>
+
+config.action_mailer.delivery_method <span class="pl-k">=</span> <span class="pl-c1">:smtp</span></pre></div></li>
+<li><p><a name="user-content-inline-email-styles"></a>
+当发送 HTML 邮件时，所有样式应为行内样式，这是因为某些客户端不能正确显示外部样式。然而，这使得邮件难以维护理并会导致代码重复。有两个类似的 gem 可以转换样式，并将样式放在对应的 html 标签里： <a href="https://github.com/fphilipe/premailer-rails3">premailer-rails3</a> 和
+<a href="https://github.com/Mange/roadie">roadie</a>。
+<sup>[<a href="#inline-email-styles">link</a>]</sup></p></li>
+<li><p><a name="user-content-background-email"></a>
+避免在产生页面响应的同时发送邮件。若有多个邮件需要发送，这会导致页面加载延迟甚至请求超时。有鉴于此，应使用 <a href="https://github.com/mperham/sidekiq">sidekiq</a> 这个 gem 在后台发送邮件。
+<sup>[<a href="#background-email">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-time" class="anchor" href="#time" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Time</h2>
+
+<ul>
+<li><p><a name="user-content-tz-config"></a>
+在 <code>application.rb</code> 里设置相应的时区。
+<sup>[<a href="#time-now">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre>config.time_zone <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>Eastern European Time<span class="pl-pds">'</span></span>
+<span class="pl-c"># 可选配置——注意取值只能是 :utc 或 :local 中的一个（默认为 :utc）</span>
+config.active_record.default_timezone <span class="pl-k">=</span> <span class="pl-c1">:local</span></pre></div></li>
+<li><p><a name="user-content-time-parse"></a>
+不要使用 <code>Time.parse</code>。
+<sup>[<a href="#time-parse">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">Time</span>.parse(<span class="pl-s"><span class="pl-pds">'</span>2015-03-02 19:05:37<span class="pl-pds">'</span></span>) <span class="pl-c"># =&gt; 会假设时间是基于操作系统的时区。</span>
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">Time</span>.zone.parse(<span class="pl-s"><span class="pl-pds">'</span>2015-03-02 19:05:37<span class="pl-pds">'</span></span>) <span class="pl-c"># =&gt; Mon, 02 Mar 2015 19:05:37 EET +02:00</span></pre></div></li>
+<li><p><a name="user-content-time-now"></a>
+不要使用 <code>Time.now</code>。
+<sup>[<a href="#time-now">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># 差</span>
+<span class="pl-c1">Time</span>.now <span class="pl-c"># =&gt; 无视所配置的时区，返回操作系统时间。</span>
+
+<span class="pl-c"># 好</span>
+<span class="pl-c1">Time</span>.zone.now <span class="pl-c"># =&gt; Fri, 12 Mar 2014 22:04:47 EET +02:00</span>
+<span class="pl-c1">Time</span>.current <span class="pl-c"># 结果同上，但更简洁</span></pre></div></li>
+</ul>
+
+<h2><a id="user-content-bundler" class="anchor" href="#bundler" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Bundler</h2>
+
+<ul>
+<li><p><a name="user-content-dev-test-gems"></a>
+只在开发环境或测试环境下使用的 gem 应进行适当的分组。
+<sup>[<a href="#dev-test-gems">link</a>]</sup></p></li>
+<li><p><a name="user-content-only-good-gems"></a>
+在项目中只使用广为人知的 gem。如果你考虑引入某些鲜为人所知的 gem，应该先仔细检查一下其源代码。
+<sup>[<a href="#only-good-gems">link</a>]</sup></p></li>
+<li><p><a name="user-content-os-specific-gemfile-locks"></a>
+关于多个开发者使用不同操作系统的项目，与操作系统有关的 gem 默认情况下会产生经常变动的 <code>Gemfile.lock</code>。 在 Gemfile 文件里，所有与 OS X 相关的 gem 放在 <code>darwin</code> 群组，而所有与 Linux 有关的 gem 应放在 <code>linux</code> 群组：
+<sup>[<a href="#os-specific-gemfile-locks">link</a>]</sup></p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c"># Gemfile</span>
+group <span class="pl-c1">:darwin</span> <span class="pl-k">do</span>
+  <span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>rb-fsevent<span class="pl-pds">'</span></span>
+  <span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>growl<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span>
+
+group <span class="pl-c1">:linux</span> <span class="pl-k">do</span>
+  <span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>rb-inotify<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+
+<p>要在正确的环境下加载合适的 gem，需添加以下代码至 <code>config/application.rb</code> ：</p>
+
+<div class="highlight highlight-source-ruby"><pre>platform <span class="pl-k">=</span> <span class="pl-c1">RUBY_PLATFORM</span>.match(<span class="pl-sr"><span class="pl-pds">/</span><span class="pl-sr">(linux|darwin)</span><span class="pl-pds">/</span></span>)[<span class="pl-c1">0</span>].to_sym
+<span class="pl-c1">Bundler</span>.<span class="pl-k">require</span>(platform)</pre></div></li>
+<li><p><a name="user-content-gemfile-lock"></a>
+不要把 <code>Gemfile.lock</code> 文件从版本控制里移除。这可不是一个随机产生的文件——它的目的是确保你所有的团队成员执行 <code>bundle install</code> 时，获得相同版本的 gem 。
+<sup>[<a href="#gemfile-lock">link</a>]</sup></p></li>
+</ul>
+
+<h2><a id="user-content-有缺陷的-gem" class="anchor" href="#有缺陷的-gem" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>有缺陷的 Gem</h2>
+
+<p>这是一个有问题的或有更好替代物的 gem 列表。不要在项目中使用它们。</p>
+
+<ul>
+<li><p><a href="http://rmagick.rubyforge.org/">rmagick</a> - 这个 gem 因大量消耗内存而臭名昭著。应使用 <a href="https://github.com/probablycorey/mini_magick">minimagick</a> 来替代它。</p></li>
+<li><p><a href="http://www.zenspider.com/ZSS/Products/ZenTest/">autotest</a> - 测试自动化的过时方案，远不及 <a href="https://github.com/guard/guard">guard</a> 和 <a href="https://github.com/mynyml/watchr">watchr</a>。</p></li>
+<li><p><a href="https://github.com/relevance/rcov">rcov</a> - 代码覆盖率工具，不兼容 Ruby 1.9。应使用 <a href="https://github.com/colszowka/simplecov">SimpleCov</a> 来替代它。</p></li>
+<li><p><a href="https://github.com/cowboyd/therubyracer">therubyracer</a> - 内存杀手，强烈不建议在生产环境中使用。建议使用 <code>node.js</code> 来替代它。</p></li>
+</ul>
+
+<p>这仍是一个完善中的列表，欢迎添加流行但有缺陷的 gem。</p>
+
+<h2><a id="user-content-进程管理" class="anchor" href="#进程管理" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>进程管理</h2>
+
+<ul>
+<li><a name="user-content-foreman"></a>
+如果项目依赖各种外界的进程，应使用 <a href="https://github.com/ddollar/foreman">foreman</a> 来管理它们。
+<sup>[<a href="#foreman">link</a>]</sup></li>
+</ul>
+
+<h1><a id="user-content-延伸阅读" class="anchor" href="#延伸阅读" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>延伸阅读</h1>
+
+<p>以下是几个极好的讲述 Rails 风格的资源，闲暇时可以考虑延伸阅读：</p>
+
+<ul>
+<li><a href="http://www.amazon.com/The-Rails-Addison-Wesley-Professional-Ruby/dp/0321944275">The Rails 4 Way</a></li>
+<li><a href="http://guides.rubyonrails.org/">Ruby on Rails Guides</a></li>
+<li><a href="http://pragprog.com/book/achbd/the-rspec-book">The RSpec Book</a></li>
+<li><a href="http://pragprog.com/book/hwcuc/the-cucumber-book">The Cucumber Book</a></li>
+<li><a href="https://leanpub.com/everydayrailsrspec">Everyday Rails Testing with RSpec</a></li>
+<li><a href="http://betterspecs.org">Better Specs for RSpec</a></li>
+</ul>
+
+<h1><a id="user-content-贡献" class="anchor" href="#贡献" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>贡献</h1>
+
+<p>本指南的每条建议都不是定案。我渴望与对 Rails 编码风格有兴趣的大家一起协作，创造出一份对整个 Ruby 社区都有益的资源。</p>
+
+<p>欢迎 open tickets 或发送带有改进的 pull request。在此提前感谢您的帮助！</p>
+
+<p>您可以通过 <a href="https://www.gittip.com/bbatsov">gittip</a> 对本项目（以及 RuboCop 项目）进行捐赠支持。</p>
+
+<p><a href="https://www.gittip.com/bbatsov"><img src="https://camo.githubusercontent.com/2c87fe287dc4ddfa84a5b5f53df03b33e1f703fd/68747470733a2f2f7261776769746875622e636f6d2f74776f6c66736f6e2f6769747469702d62616467652f302e322e302f646973742f6769747469702e706e67" alt="Support via Gittip" data-canonical-src="https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png" style="max-width:100%;"></a></p>
+
+<h2><a id="user-content-如何贡献" class="anchor" href="#如何贡献" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>如何贡献？</h2>
+
+<p>只需遵循<a href="https://github.com/bbatsov/rails-style-guide/blob/master/CONTRIBUTING.md">贡献指南</a>即可。</p>
+
+<h1><a id="user-content-许可证" class="anchor" href="#许可证" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>许可证</h1>
+
+<p><a href="https://camo.githubusercontent.com/ea7febd364f01e7b3f46f6fb86712fe05925bfbf/687474703a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792f332e302f38387833312e706e67" target="_blank"><img src="https://camo.githubusercontent.com/ea7febd364f01e7b3f46f6fb86712fe05925bfbf/687474703a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792f332e302f38387833312e706e67" alt="Creative Commons License" data-canonical-src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="max-width:100%;"></a>
+This work is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/deed.zh">Creative Commons Attribution 3.0 Unported License</a></p>
+
+<h1><a id="user-content-口耳相传" class="anchor" href="#口耳相传" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>口耳相传</h1>
+
+<p>一份社区驱动的风格指南，若不为人所知，那有何用。请在微博转发这份指南，分享给你的朋友或同事。我们得到的每个评论、建议或意见都可以让这份指南变得更好一点。而我们想要拥有的是尽可能好的指南，不是吗？</p>
+
+<p>共勉之，<br>
+<a href="https://twitter.com/bbatsov">Bozhidar</a></p>
+</article>
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="hidden">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.16826s from github-fe126-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-IftkoS9RBlJl9IQfpdEJcl0bjnoIGzNGw5OlxsQOT4Q=" src="https://assets-cdn.github.com/assets/frameworks-21fb64a12f51065265f4841fa5d109725d1b8e7a081b3346c393a5c6c40e4f84.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-sGgCfmGornQOc2HANqCn3yT63xcf0akrL+RMMclN1io=" src="https://assets-cdn.github.com/assets/github-b068027e61a8ae740e7361c036a0a7df24fadf171fd1a92b2fe44c31c94dd62a.js"></script>
+      
+      
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+

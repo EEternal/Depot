@@ -1,0 +1,16 @@
+- unless @cart.items.empty?
+  div.cart-title  Your cart
+  table
+    = render 'cart_item'
+    tr.total-line
+      td colspan='2'  Total
+      td.total-cell
+        = number_to_currency(@cart.total_price)
+        
+  = button_to "Empty cart", action: 'empty_cart'
+  = button_to "Checkout", action: 'checkout'
+end
+div.main
+  - if flash[:notice]
+    div#notice
+      = flash[:notice]

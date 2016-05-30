@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Pragprog Books Online Store
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body.store
+    div.banner
+      = image_tag ("logo.png")
+      = @page_title || "Pragmatic Bookshelf"
+    div.columns
+      div.side
+        div.cart
+          = render 'cart'
+        a href="http://www...." = t('.home')
+        a href="http://www..../faq" = t('.questions')
+        a href="http://www..../news" = t('.news')
+        a href="http://www..../contact" = t('.contact')
+        = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+        
+        - if session[:user_id]
+          br
+          = link_to 'Orders', controller: 'orders'
+          = link_to 'Products', controller: 'products'
+          = link_to 'Users', controller: 'users'
+          = link_to 'Logout', "/admin/logout"
+      = yield
+      
+      
